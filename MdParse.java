@@ -8,7 +8,7 @@ public class MdParse {
         ArrayList<String> toReturn = new ArrayList<>();
         // find the next [, then find the ], then find the (, then take up to
         // the next )
-        int currentIndex = 1; //changed 0 to 1 so that test fails
+        int currentIndex = 0; 
         while(currentIndex < markdown.length()) {
             if (markdown.indexOf("(", currentIndex) == -1 || markdown.indexOf(")", currentIndex) == -1 ||
                 markdown.indexOf("[", currentIndex) == -1 || markdown.indexOf("]", currentIndex) == -1) {
